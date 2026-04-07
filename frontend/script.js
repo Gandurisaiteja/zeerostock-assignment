@@ -10,8 +10,7 @@ async function search() {
   status.textContent = "Loading...";
   resultsDiv.innerHTML = "";
 
-  const url = `http://localhost:5000/search?q=${q}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`;
-
+  const url = `https://zeerostock-assignment-0xhf.onrender.com/search?q=${q}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`;
   try {
     const res = await fetch(url);
 
