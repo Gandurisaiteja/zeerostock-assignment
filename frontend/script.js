@@ -7,7 +7,6 @@ async function search() {
   const status = document.getElementById("status");
   const resultsDiv = document.getElementById("results");
 
-  // Clear previous content
   status.textContent = "Loading...";
   resultsDiv.innerHTML = "";
 
@@ -26,7 +25,6 @@ async function search() {
 
     status.textContent = "";
 
-    // No results case
     if (data.length === 0) {
       const noResult = document.createElement("div");
       noResult.className = "no-results";
@@ -36,7 +34,7 @@ async function search() {
       return;
     }
 
-    // Render results using DOM
+  
     data.forEach(item => {
       const card = document.createElement("div");
       card.className = "card";
@@ -54,7 +52,7 @@ async function search() {
       const priceText = document.createElement("span");
       priceText.textContent = "Price: ₹" + item.price;
 
-      // Append all elements
+      
       card.appendChild(title);
       card.appendChild(br1);
       card.appendChild(categoryText);
