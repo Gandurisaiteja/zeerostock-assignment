@@ -38,7 +38,10 @@ For large datasets, performance can be improved by:
 - Using full-text search (e.g., ElasticSearch)
 
 ---
-
+## Live Demo
+- Frontend: https://incredible-faun-b727f8.netlify.app/
+- Backend API: https://zeerostock-assignment-0xhf.onrender.com/search
+---
 ## How to Run Locally
 
 ### Backend
@@ -46,3 +49,4 @@ For large datasets, performance can be improved by:
 cd backend
 npm install
 node server.js
+
